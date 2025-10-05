@@ -1,0 +1,237 @@
+.about-page {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #083a3a;
+  background: #f9fdfc;
+}
+
+/* Hero Section */
+.about-hero {
+  text-align: center;
+  padding: 6rem 2rem 4rem;
+  background: linear-gradient(135deg, #0a4d4d, #128c7e);
+  color: #fff;
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.about-hero p {
+  font-size: 1.3rem;
+  opacity: 0.95;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* General Sections */
+.about-section {
+  padding: 5rem 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.about-section h2 {
+  font-size: 2.3rem;
+  color: #0a4d4d;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.about-section p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Split Layout (text + image) */
+.split {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+
+.split.reverse {
+  flex-direction: row-reverse;
+}
+
+.about-text {
+  flex: 1 1 50%;
+}
+
+.about-text ul {
+  margin-top: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.about-text ul li {
+  margin: 0.5rem 0;
+  font-size: 1.05rem;
+}
+
+.about-image {
+  flex: 1 1 45%;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Force "Who We Are" image left on desktop */
+#who-we-are.split {
+  flex-direction: row; /* image left, text right */
+}
+
+/* Team Section */
+.team-section {
+  text-align: center;
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.team-title {
+  font-size: 2.3rem;
+  color: #0a4d4d;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.team-intro {
+  max-width: 500px;
+  margin: auto;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Team Grid */
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* mobile default: 1 card per row */
+  row-gap: 2rem; /* vertical spacing */
+  column-gap: 2rem; /* horizontal spacing for desktop */
+  margin-top: 2rem;
+  justify-items: center;
+}
+
+@media (min-width: 900px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 320px); /* 2 cards per row on desktop */
+    justify-content: center;
+    column-gap: 3rem; /* horizontal spacing between the two cards */
+    row-gap: 2rem;
+  }
+}
+
+.team-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 100%;
+  max-width: 320px;
+}
+
+.team-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.team-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.team-info {
+  padding: 1rem 1.2rem;
+  text-align: center;
+}
+
+.team-info h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.3rem;
+  color: #0a4d4d;
+}
+
+.team-info p {
+  margin: 0.2rem 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.team-bio {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+/* Social Links */
+.team-socials {
+  margin-top: 0.8rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.team-socials a {
+  color: #128c7e;
+  font-size: 1.2rem;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.team-socials a:hover {
+  color: #0a4d4d;
+  transform: scale(1.2);
+}
+
+/* Timeline (History) */
+.timeline {
+  margin-top: 1.5rem;
+  border-left: 3px solid #128c7e;
+  padding-left: 1rem;
+}
+
+.timeline-item {
+  margin: 1rem 0;
+  font-size: 1.05rem;
+  color: #444;
+}
+
+.timeline-item span {
+  font-weight: bold;
+  color: #128c7e;
+  margin-right: 0.5rem;
+}
+
+/* Icons */
+.icon {
+  color: #128c7e;
+  font-size: 1.6rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 900px) {
+  .split {
+    flex-direction: column;
+  }
+
+  .about-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .team-card img {
+    height: 200px;
+  }
+}

@@ -1,0 +1,48 @@
+/* Community.css */
+.community-page {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 2rem 0;
+  background: #f7f9fa;
+  min-height: 80vh;
+  box-sizing: border-box;
+}
+.community-page h1 {
+  color: #00b894;
+}
+.community-cards {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2.5rem;
+  flex-wrap: wrap;
+}
+.community-card {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px rgba(162, 89, 255, 0.13);
+  padding: 2rem 1.5rem;
+  min-width: 220px;
+  max-width: 300px;
+  width: 100%;
+  text-align: center;
+  color: #a259ff;
+  font-family: "Montserrat", "Segoe UI", Arial, sans-serif;
+  margin-bottom: 1.5rem;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.community-card:hover {
+  box-shadow: 0 4px 24px rgba(162, 89, 255, 0.18);
+  transform: translateY(-2px) scale(1.04);
+}
+.community-card h2 {
+  color: #a259ff;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.community-card p {
+  color: #222;
+  font-size: 1.05rem;
+}

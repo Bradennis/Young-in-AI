@@ -1,0 +1,216 @@
+.programs-page {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #083a3a;
+  background: #f9fdfc;
+}
+
+/* Hero Section */
+.programs-hero {
+  position: relative;
+  padding: 8rem 2rem 6rem;
+  background: url("../assets/code.jpg") center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+}
+.programs-hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(1, 31, 31, 0.7);
+}
+.programs-hero-content {
+  position: relative;
+  z-index: 2;
+}
+.programs-hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.programs-hero-content p {
+  font-size: 1.3rem;
+  max-width: 700px;
+  margin: auto;
+  opacity: 0.95;
+}
+
+/* Programs Grid */
+.programs-grid {
+  padding: 5rem 2rem;
+  text-align: center;
+  margin-top: -4rem;
+}
+.section-title {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: #0a4d4d;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: auto;
+}
+.program-card {
+  background: #f0faf9;
+  padding: 1.2rem;
+  border-radius: 10px;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s, background 0.3s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+.program-card:hover {
+  transform: translateY(-6px);
+  background: #cdeee7;
+}
+.icon-circle {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  border-radius: 50%;
+  background: #128c7e;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+.program-card h3 {
+  font-size: 1rem;
+  color: #0a4d4d;
+}
+
+/* Expanded Sections */
+.programs-section {
+  padding: 5rem 2rem;
+  max-width: 1100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #0a4d4d;
+}
+.program-desc {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 1.8rem;
+}
+.tagline {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #128c7e;
+  display: block;
+  margin-bottom: 0.6rem;
+}
+
+/* Feature List */
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.feature-item {
+  text-align: left;
+}
+.feature-header {
+  display: flex;
+  align-items: center;
+  gap: 0.18rem; /* minimal gap between icon and title */
+  margin-bottom: 0.1rem; /* reduce bottom margin */
+  padding: 0; /* remove padding */
+}
+.feature-header h4 {
+  font-size: 1.13rem;
+  font-weight: 700;
+  color: #0a4d4d;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.01em;
+}
+.icon-circle.small {
+  width: 24px;
+  height: 24px;
+  font-size: 1.05rem;
+  background: linear-gradient(135deg, #16e0bd 60%, #128c7e 100%);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(22, 224, 189, 0.12);
+  margin: 0;
+}
+.feature-desc {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #555;
+  margin-left: 2.2rem;
+}
+
+/* Image Styling */
+.about-image {
+  flex: 1 1 45%;
+  display: flex;
+  justify-content: center;
+}
+.about-image img {
+  width: 100%;
+  max-width: 420px;
+  aspect-ratio: 1.1 / 1;
+  border-radius: 50% / 40%; /* ellipse shape */
+  background: none;
+  padding: 0;
+  object-fit: cover;
+  box-shadow: 0 6px 18px rgba(22, 224, 189, 0.15);
+  transition: transform 0.3s ease;
+}
+.about-image img:hover {
+  transform: scale(1.05);
+}
+
+/* CTA Section */
+.programs-cta {
+  text-align: center;
+  padding: 6rem 2rem;
+  background: #128c7e;
+  color: #fff;
+}
+.programs-cta h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+.programs-cta p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+.programs-btn {
+  background: #fff;
+  color: #128c7e;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+.programs-btn:hover {
+  background: #0a4d4d;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .programs-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-image {
+    order: -1;
+  }
+  .feature-desc {
+    margin-left: 0;
+  }
+}

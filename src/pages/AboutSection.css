@@ -1,0 +1,138 @@
+.about-section {
+  width: 100%;
+  background: #fff;
+  padding: 3rem 0 3.5rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.about-container {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  gap: 2.5rem;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.about-left {
+  flex: 0.45;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.about-label {
+  font-weight: 800;
+  margin-bottom: 10px;
+  font-family: "Georgia", serif;
+  letter-spacing: 1px;
+  font-size: 1.8rem;
+  color: #12897a;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #222;
+  margin-bottom: 1.2rem;
+  font-family: "Montserrat", "Segoe UI", Arial, sans-serif;
+}
+
+.about-desc {
+  color: #444;
+  font-size: 1.08rem;
+  margin-bottom: 0.8rem;
+  line-height: 1.7;
+  font-family: "Montserrat", "Segoe UI", Arial, sans-serif;
+}
+
+.about-btn {
+  background: #00bfae;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.02rem;
+  border: none;
+  border-radius: 2px;
+  padding: 0.6rem 1.2rem;
+  margin-top: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  transition: background 0.2s;
+  width: 150px;
+}
+about-btn:hover {
+  background: #009e8e;
+}
+
+.about-right {
+  flex: 0.6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.events-card {
+  background: #fff;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.09);
+  padding: 2.2rem 2rem 2.2rem 2rem;
+  min-width: 260px;
+  max-width: 320px;
+  width: 100%;
+}
+
+.events-title {
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: #222;
+  margin-bottom: 1.2rem;
+  font-family: "Montserrat", "Segoe UI", Arial, sans-serif;
+}
+
+.event-item {
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 1.1rem;
+  margin-bottom: 1.1rem;
+}
+.event-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.event-name {
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: #00796b;
+  margin-bottom: 0.3rem;
+  display: block;
+}
+.event-details {
+  display: flex;
+  gap: 0.7rem;
+  font-size: 0.98rem;
+  color: #666;
+  align-items: center;
+}
+.event-time {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+.event-location {
+  color: #888;
+}
+
+@media (max-width: 900px) {
+  .about-container {
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: stretch;
+  }
+  .about-right {
+    justify-content: flex-start;
+  }
+  .events-card {
+    min-width: 0;
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,55 @@
+/* HeroFeatures.css */
+.hero-features-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+  z-index: 2;
+  position: relative;
+}
+.hero-features {
+  display: flex;
+  gap: 2.5rem;
+  background: #fff;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem 2.5rem;
+  align-items: center;
+}
+.feature-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-width: 180px;
+}
+.feature-icon {
+  background: #00b894;
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 50%;
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+.feature-info h4 {
+  margin: 0 0 0.3rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.feature-info p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #444;
+}
+@media (max-width: 900px) {
+  .hero-features {
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 1rem;
+  }
+  .feature-card {
+    min-width: 0;
+  }
+}

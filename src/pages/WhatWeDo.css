@@ -1,0 +1,133 @@
+/* What We Do Section Styles */
+.what-we-do-section {
+  width: 100%;
+  background: #fff;
+  padding: 3rem 0 3.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.what-we-do-header {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+.what-we-do-title-wrap {
+  display: flex;
+  align-items: center;
+  flex: 1.3;
+}
+
+.what-we-do-divider {
+  width: 4px;
+  height: 60px;
+  background: #13825b;
+  margin: 0 2rem;
+  align-self: center;
+}
+
+.what-we-do-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #222;
+  font-family: "Montserrat", "Segoe UI", Arial, sans-serif;
+  flex: 2;
+  margin: 0;
+}
+
+.what-we-do-desc {
+  flex: 1;
+  color: #666;
+  font-size: 1.05rem;
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+}
+
+.what-we-do-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+  width: 100%;
+  max-width: 800px;
+}
+
+.what-card {
+  background: #fff;
+  box-shadow: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 220px;
+  max-width: 300px;
+  width: 100%;
+}
+
+.what-img {
+  width: 95%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0;
+  margin-bottom: 0.5rem;
+}
+
+.what-label {
+  font-size: 1.08rem;
+  font-weight: 600;
+  color: #222;
+  text-align: center;
+  margin-top: 0.5rem;
+  background: #f7f9fa;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+@media (max-width: 900px) {
+  .what-we-do-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .what-we-do-divider {
+    display: none;
+  }
+  .what-we-do-title-wrap {
+    margin-bottom: 1rem;
+  }
+  .what-we-do-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .what-we-do-desc {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+  .what-we-do-cards {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    width: 100%;
+    max-width: 100vw;
+    padding: 0 1rem;
+  }
+  .what-card {
+    min-width: 90vw;
+    max-width: 100vw;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .what-img {
+    width: 100%;
+    height: 220px;
+    margin-bottom: 0.7rem;
+  }
+}
