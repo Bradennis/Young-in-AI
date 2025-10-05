@@ -88,6 +88,34 @@ const About = () => {
         </div>
       </section>
 
+      {/* Our History */}
+      <section id='our-history' className='about-section split'>
+        <div className='about-text'>
+          <h2>
+            <FaHistory className='icon' /> Our History
+          </h2>
+          <p>
+            Since our inception, we’ve grown from a small initiative into a
+            global movement. Our journey reflects resilience, innovation, and an
+            unwavering belief in the power of collaboration.
+          </p>
+          <div className='timeline'>
+            <div className='timeline-item'>
+              <span>2015</span> Founded with a vision for impact
+            </div>
+            <div className='timeline-item'>
+              <span>2018</span> Expanded programs internationally
+            </div>
+            <div className='timeline-item'>
+              <span>2022</span> Reached 10,000+ participants globally
+            </div>
+          </div>
+        </div>
+        <div className='about-image'>
+          <img src={historyImg} alt='Our Journey' />
+        </div>
+      </section>
+
       {/* Meet the Team */}
       <section id='meet-the-team' className='about-section team-section'>
         <h2 className='team-title'>
@@ -170,34 +198,6 @@ const About = () => {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Our History */}
-      <section id='our-history' className='about-section split'>
-        <div className='about-text'>
-          <h2>
-            <FaHistory className='icon' /> Our History
-          </h2>
-          <p>
-            Since our inception, we’ve grown from a small initiative into a
-            global movement. Our journey reflects resilience, innovation, and an
-            unwavering belief in the power of collaboration.
-          </p>
-          <div className='timeline'>
-            <div className='timeline-item'>
-              <span>2015</span> Founded with a vision for impact
-            </div>
-            <div className='timeline-item'>
-              <span>2018</span> Expanded programs internationally
-            </div>
-            <div className='timeline-item'>
-              <span>2022</span> Reached 10,000+ participants globally
-            </div>
-          </div>
-        </div>
-        <div className='about-image'>
-          <img src={historyImg} alt='Our Journey' />
         </div>
       </section>
     </div>
