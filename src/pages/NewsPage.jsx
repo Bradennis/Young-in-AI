@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./NewsPage.css";
 import newsBanner from "../assets/news-banner.png";
-import news1 from "../assets/dataScience1.jpg";
+import news1 from "../assets/dScience.jpg";
 
 // sample articles (replace with API data)
 const sampleArticles = [

@@ -8,7 +8,7 @@ import {
   FaCheckCircle,
 } from "react-icons/fa";
 import programHero from "../assets/code.jpg";
-import trainingImg from "../assets/datascience1.jpg";
+import trainingImg from "../assets/dScience.jpg";
 import mentorshipImg from "../assets/WhatsApp Image 2025-09-05 at 16.17.47_43df8204.jpg";
 import outreachImg from "../assets/robotics.jpg";
 import researchImg from "../assets/abstract.jpg";

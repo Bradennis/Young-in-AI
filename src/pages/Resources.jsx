@@ -14,9 +14,8 @@ import {
 } from "react-icons/fa";
 import "./Resources.css";
 import resourceHero from "../assets/code.jpg";
-import articleImg from "../assets/datascience1.jpg";
+import articleImg from "../assets/dScience.jpg";
 import ebookImg from "../assets/abstract.jpg";
-import faqImg from "../assets/AI image.jpg";
 
 const Resources = () => {
   const [search, setSearch] = useState("");
