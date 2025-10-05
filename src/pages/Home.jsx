@@ -7,7 +7,7 @@ import "./AboutSection.css";
 import "./WhatWeDo.css";
 import logoImg from "../assets/data science.jpg";
 import logo from "../assets/logo.png";
-import reactImg from "../assets/Networking.jpg";
+import reactImg from "../assets/network.jpg";
 import roboticsImg from "../assets/robotics.jpg";
 import aiImg from "../assets/mobileapps.jpg";
 import heroBg from "../assets/code.jpg";
